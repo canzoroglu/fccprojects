@@ -3,35 +3,84 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Let us know how we can improve freeCodeCamp</p>
+
     <form id="survey-form">
+
       <div>
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <div class="labels">
+          <label id="name-label" for="name">Name:</label>
+        </div>
+        <input class="inputs" type="text" name="name" id="name" placeholder="Enter your name" required>
       </div>
+
       <div>
-        <label id="email-label" for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <div class="labels">
+          <label id="email-label" for="email">Email:</label>
+        </div>
+        <input class="inputs" type="email" name="email" id="email" placeholder="Enter your email" required>
       </div>
+
       <div>
-        <label id="number-label" for="number">Age:</label>
-        <input type="number" name="age" id="number" min="10" max="90" placeholder="Enter your age">
+        <div class="labels">
+          <label id="number-label" for="number">Age:</label>
+        </div>
+        <input class="inputs" type="number" name="age" id="number" min="10" max="90" placeholder="Enter your age">
       </div>
+
       <div>
-        <label for="dropdown">Which do you like most?</label>
-        <select id="dropdown">
+        <div class="labels">
+          <label for="dropdown">Which do you like most?</label>
+        </div>
+        <select class="inputs" id="dropdown">
           <option value="Projects">Projects</option>
           <option value="Open Source">Open Source</option>
           <option value="Forum">Forum</option>
           <option value="Challenges">Challenges</option>
         </select>
       </div>
+
+      <div>
+        <div class="labels">
+          <label for="radios">Do you recommend FCC?</label>
+        </div>
+        <ul id="radios" class="choices">
+          <li><input type="radio" name="radio-buttons" value="1">Definitely</li>
+          <li><input type="radio" name="radio-buttons" value="2">Maybe</li>
+          <li><input type="radio" name="radio-buttons" value="3">Not sure</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="labels">
+          <label for="checks">Things should be improved</label>
+        </div>
+        <ul id="checks" class="choices">
+          <li><input type="checkbox" value="1">Front-End Projects</li>
+          <li><input type="checkbox" value="2">Back-end Projects</li>
+          <li><input type="checkbox" value="3">Data Visulization</li>
+          <li><input type="checkbox" value="4">Forum</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="labels">
+          <label for="additional">Add additional comments</label>
+        </div>
+        <textarea id="additional" rows="8" cols="80" placeholder="enter your comments"></textarea>
+      </div>
+
       <div>
         <button type="submit" id="submit">Submit</button>
       </div>
     </form>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+    </script>
   </body>
 </html>
