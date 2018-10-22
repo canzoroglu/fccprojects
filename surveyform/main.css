@@ -1,0 +1,13 @@
+.choices {
+  list-style-type: none;
+  display: inline-block;
+  width: 20%;
+}
+.labels {
+  display: inline-block;
+  width: 10%;
+  margin-top: 10px;
+}
+.inputs {
+  width: 20%;
+}
