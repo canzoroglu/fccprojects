@@ -2,23 +2,82 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Product Landing</title>
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
     <header id="header">
-      <div class="logo">
-        <img id="header-image" src="http://semanticbits.com/semanticbits/wp-content/uploads/2018/01/Screen-Shot-2018-01-29-at-11.04.35-AM.png" alt="">
-      </div>
+      <img id="header-img" src="http://semanticbits.com/semanticbits/wp-content/uploads/2018/01/Screen-Shot-2018-01-29-at-11.04.35-AM.png" alt="">
       <nav id="nav-bar">
-        <a class="nav-link "href="#">About</a>
-        <a class="nav-link "href="#">About</a>
-        <a class="nav-link "href="#">About</a>
+        <a class="nav-link "href="#features">Features</a>
+        <a class="nav-link "href="#prices">Prices</a>
+        <a class="nav-link "href="#video">How Does It Work?</a>
       </nav>
     </header>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-        <input type="email" name="email" placeholder="enter your email">
-        <button type="submit" id="submit" name="submit">Get Started</button>
-    </form>
+    <div class="form-div">
+      <h2>Hand-made Instruments</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+          <input type="email" id="email" name="email" placeholder="enter your email">
+          <input type="submit" id="submit" name="submit" value="Get Started"></input>
+      </form>
+    </div>
+    <div id="features">
+      <div class="item1">Logo1</div>
+      <div class="item2">
+        <h1>Premium Materials</h1>
+        <p>
+          Our trombones use the shiniest brass which is
+          sourced locally. This will increase the longevity of your purchase.
+        </p>
+      </div>
+      <div class="item3">Logo2</div>
+      <div class="item4">
+        <h1>Premium Materials</h1>
+        <p>
+          Our trombones use the shiniest brass which is
+          sourced locally. This will increase the longevity of your purchase.
+        </p>
+      </div>
+      <div class="item5">Logo3</div>
+      <div class="item6">
+        <h1>Premium Materials</h1>
+        <p>
+          Our trombones use the shiniest brass which is
+          sourced locally. This will increase the longevity of your purchase.
+        </p>
+      </div>
+    </div>
+    <section>
+      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+      </iframe>
+    </section>
+    <div id="prices">
+      <section class="centered">
+        <h1>Loream Ipsyam</h1>
+        <p>899</p>
+        <p>Lor sdas fmd</p>
+        <button type="submit" name="select">Select</button>
+      </section>
+      <section class="centered">
+        <h1>Loream Ipsyam</h1>
+        <p>899</p>
+        <p>Lor sdas fmd</p>
+        <button type="submit" name="select">Select</button>
+      </section>
+      <section class="centered">
+        <h1>Loream Ipsyam</h1>
+        <p>899</p>
+        <p>Lor sdas fmd</p>
+        <button type="submit" name="select">Select</button>
+      </section>
+      </div>
+      <footer id="footer">
+        <a class="nav-link "href="#">About</a>
+        <a class="nav-link "href="#">About</a>
+        <a class="nav-link "href="#">About</a>
+      </footer>
+      <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+      </script>
   </body>
 </html>
