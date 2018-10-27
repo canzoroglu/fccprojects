@@ -4,9 +4,15 @@
   align-items: center;
   margin: 150px auto;
 }
-@media all and (max-width: 600px){
-  section iframe {
-    margin: 100px auto;
+@media (max-width: 600px){
+  #nav-bar {
+    flex-direction: column;
+  }
+  #header {
+    height: 100px !important;
+  }
+  input {
+    font-size: 9px;
   }
 }
 
@@ -20,7 +26,8 @@
   width: 100%;
 }
 #header-img {
-  height: 200px;
+  max-width: 200px;
+  height: auto;
 }
 #nav-bar {
   justify-self: center;
@@ -35,6 +42,7 @@
 }
 input {
   width: 100%;
+  text-align: center;
 }
 input[type="submit"] {
   display: block;
@@ -75,4 +83,7 @@ section.centered {
   width: 65%;
   margin: 40px auto;
   justify-content: flex-end;
+}
+.fab, .fas {
+  font-size: 2em;
 }
